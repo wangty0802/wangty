@@ -55,7 +55,7 @@ public class BlockingDeque {
         public void run() {
             for (int i = 1; i < 10; ++i) {
                 try {
-                    //必须要使用take()方法在获取的时候阻塞
+                    //必须要使用take()方法在获取的时候  阻塞
                    System.out.println(name+"消费： " +  concurrentLinkedQueue.take());
                     //使用poll()方法 将产生非阻塞效果
                     //ystem.out.println(name+"消费： " +  concurrentLinkedQueue.poll());
